@@ -95,7 +95,7 @@ impl Pipeline {
             .stdin(stdin)
             .stdout(stdout)
             .stderr(stderr)
-            .process_group(0)
+            //.process_group(0)
             .spawn()
             .expect(&format!("Failed to spawn command: {} {}", name, args.join(" ")))
     }
